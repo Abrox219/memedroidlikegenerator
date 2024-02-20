@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memedroid likes and followers generator</title>
+    <style>
+        body {
+            background-color: rgb(77, 196, 54);
+            text-align: center;
+        }
+
+        #logo {
+            display: block;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        #login-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="unnamed.png" alt="logo Memedroid"> 
+    <h1>zaloguj sie hakerze</h1>  
+    <div id="login-form">
+        <form onsubmit="generateResult(); return false;">
+            <label for="nick">nick</label>
+            <input type="text" id="nick" name="nick" required><br><br>
+            <label for="obserwatorzy">obserwatorzy</label>
+            <input type="text" id="obserwatorzy" name="obserwatorzy" required><br><br>
+            <label for="like">like</label>
+            <input type="text" id="like" name="like" required><br><br>
+            <input type="submit" value="generuj">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
